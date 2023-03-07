@@ -1,21 +1,21 @@
-/**
- * This is not a production server yet!
- * This is only a minimal backend to get started.
- */
-
 import express from 'express';
-import * as path from 'path';
+import * as dotenv from 'dotenv';
+dotenv.config();
+import { configPassport } from './config/passport';
+import { configSession } from './config/session';
+import { basicRoutes } from './routes/basic';
+import { PORT } from './config/envvar';
+import { runMigrations } from './config/runMigrations';
+import { repoRoutes } from './routes/repo';
 
 const app = express();
 
-app.use('/assets', express.static(path.join(__dirname, 'assets')));
+configSession(app);
+configPassport(app);
+basicRoutes(app);
+repoRoutes(app);
 
-app.get('/api', (req, res) => {
-  res.send({ message: 'Welcome to backend!' });
-});
-
-const port = process.env.PORT || 3333;
-const server = app.listen(port, () => {
-  console.log(`Listening at http://localhost:${port}/api`);
-});
+const server = app.listen(PORT, () => console.log(`Listening at http://localhost:${PORT}/api`));
 server.on('error', console.error);
+
+runMigrations().then(console.log);
