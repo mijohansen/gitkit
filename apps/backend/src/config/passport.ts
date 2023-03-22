@@ -29,6 +29,7 @@ export const configPassport = (app: Application) => {
   );
   app.get('/authorization-start', passport.authenticate('github', { scope: ['user:email', 'repo'] }));
   app.get('/user', (req, res) => {
+    // @ts-ignore
     res.json({ session: req.session.passport.user });
   });
   app.get(
