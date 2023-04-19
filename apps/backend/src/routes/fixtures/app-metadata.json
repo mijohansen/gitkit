@@ -1,0 +1,45 @@
+{
+  "id": "ttd/michael-cypress-test-app",
+  "org": "ttd",
+  "title": {
+    "nb": "michael-cypress-test-app"
+  },
+  "dataTypes": [
+    {
+      "id": "ref-data-as-pdf",
+      "allowedContentTypes": ["application/pdf"],
+      "maxCount": 0,
+      "minCount": 0,
+      "enablePdfCreation": true,
+      "enableFileScan": false,
+      "validationErrorOnPendingFileScan": false
+    },
+    {
+      "id": "likert",
+      "allowedContentTypes": ["application/xml"],
+      "appLogic": {
+        "autoCreate": true,
+        "classRef": "Altinn.App.Models.LikertSurvey",
+        "allowAnonymousOnStateless": false,
+        "autoDeleteOnProcessEnd": false
+      },
+      "taskId": "Task_1",
+      "maxCount": 1,
+      "minCount": 1,
+      "enablePdfCreation": true,
+      "enableFileScan": false,
+      "validationErrorOnPendingFileScan": false
+    }
+  ],
+  "partyTypesAllowed": {
+    "bankruptcyEstate": false,
+    "organisation": false,
+    "person": false,
+    "subUnit": false
+  },
+  "autoDeleteOnProcessEnd": false,
+  "created": "2023-01-04T10:04:59.1958277Z",
+  "createdBy": "mijohansen",
+  "lastChanged": "2023-01-04T10:04:59.1959198Z",
+  "lastChangedBy": "mijohansen"
+}

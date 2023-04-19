@@ -1,0 +1,33 @@
+{
+  "clone_url": "http://studio.localhost/repos/mijohansen/enda-en-ny-app.git",
+  "created_at": "2023-03-21T14:10:52Z",
+  "default_branch": "master",
+  "description": "",
+  "empty": false,
+  "fork": false,
+  "forks_count": 0,
+  "full_name": "mijohansen/enda-en-ny-app",
+  "html_url": "http://studio.localhost/repos/mijohansen/enda-en-ny-app",
+  "id": 2,
+  "mirror": false,
+  "name": "enda-en-ny-app",
+  "open_issues_count": 0,
+  "owner": {
+    "avatar_url": "https://secure.gravatar.com/avatar/b4fb059a1ecf2361cb389609439704b5?d=identicon",
+    "email": "mijohansen@digdir.no",
+    "full_name": "",
+    "id": 1,
+    "login": "mijohansen"
+  },
+  "parent": null,
+  "permissions": { "admin": true, "pull": true, "push": true },
+  "private": false,
+  "size": 39,
+  "ssh_url": "git@studio.localhost:mijohansen/enda-en-ny-app.git",
+  "stars_count": 1,
+  "updated_at": "2023-03-21T14:45:18Z",
+  "watchers_count": 1,
+  "website": "",
+  "is_cloned_to_local": true,
+  "repositoryCreatedStatus": 0
+}
