@@ -3,8 +3,7 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "start": "nx serve backend",
-    "poc": "git diff apps/backend/src/utils/fixtures/lang-a.json apps/backend/src/utils/fixtures/lang-b.json"
+    "start": "nx serve backend"
   },
   "private": true,
   "devDependencies": {

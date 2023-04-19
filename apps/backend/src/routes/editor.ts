@@ -1,6 +1,6 @@
 import { Application } from 'express';
 
-export const editorRoutes = (app: Application) => {
+export const guiRoutes = (app: Application) => {
   app.get('/editor/*', async (req, res) => {
     res.type('text/html');
     res.send(`
